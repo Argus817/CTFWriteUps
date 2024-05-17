@@ -1,6 +1,16 @@
 from Crypto.Util.number import *
 from tonellishanks import *
-from chall import invpow3
+
+def invpow3(x):
+    lo, hi = 1, x
+    while lo < hi:
+        mid = (lo + hi) // 2 + 1
+        if (mid**3) <= x:
+            lo = mid
+        else:
+            hi = mid - 1
+    return lo
+
 
 value_1 = 34994952631013563439857468985559745199379391295940238707110695903159545061311344766055629477728657
 value_2 = 7906488397402721714607879953738472269409876715324979164781592447

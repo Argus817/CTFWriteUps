@@ -1,3 +1,5 @@
+#credit and source: https://zerobone.net/blog/math/tonelli-shanks/
+
 import random
 
 
