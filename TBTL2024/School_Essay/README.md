@@ -1,4 +1,8 @@
 # School Essay - Crypto
+## Hint
+I had to write an essay for school describing my favorite classmate. I wonder if my classmates will be able to figure out who I'm describing... 
+#### Attachments: `description.txt` `chall.py`
+## Solution
 We are given a text file `description.txt` with the following contents
 ```
 My Favorite Classmate
@@ -70,4 +74,4 @@ We have
 `N`, `value_1` and `value_2` from the above code.<br>
 Let $v_1$ = `value_1`, ${v_2}$ = `value_2`, n = `N` and the integer representing flag to be $f$. Here `N` is prime so we can use Tonelli-Shank's algorithm to compute $f$ such that $f^2 \equiv {v_1} \mod n$
 
-Complete solution is given in [solve.py](./solve.py). Tonelli-Shank's algorithm is given in [tonellishanks.py](./tonellishanks.py) (credits to [ZeroBone](https://zerobone.net/blog/math/tonelli-shanks/)).
+Complete solution is given in [`solve.py`](./solve.py). Tonelli-Shank's algorithm is given in [`tonellishanks.py`](./tonellishanks.py) (credits to [ZeroBone](https://zerobone.net/blog/math/tonelli-shanks/)).

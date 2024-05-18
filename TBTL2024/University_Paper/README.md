@@ -1,4 +1,9 @@
 # University Paper - Crypto
+## Hint
+I had to write a scientific paper for one of my university courses describing my scientific role model. I wonder if my professors will be able to figure out who I'm describing...
+#### Attachments: `description.txt` `chall.py`
+
+## Solution
 We are given a text file `description.txt` with the following contents
 ```
 On the Estemeed Scientifc Role Model of Mine
@@ -90,4 +95,4 @@ Let $l = \lceil {v_2}^{\frac{3}{2}}\rceil$, we can be sure that $f = l+x$ where 
 Since we know that in mod $n$,
 ${v_1} \equiv f^2 \equiv (l+x)^2$, we can use Coppersmith's method on the polynomial $g(x) = (x+l)^2 - {v_1}$ to find the value of $x_0$ such that $g(x_0) \equiv 0 \mod n, \ {x_0} < {\frac{3}{2}}{n}^{\frac{1}{3}}$, and hence the value of $f$. <br>
 
-Complete solution is given in [solve.py](./solve.py). Coppersmith's method is implemented using SageMath's `small_roots` ([link](https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_modn_dense_ntl.html#sage.rings.polynomial.polynomial_modn_dense_ntl.small_roots)) function.
+Complete solution is given in [`solve.py`](./solve.py). Coppersmith's method is implemented using SageMath's `small_roots` ([link](https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_modn_dense_ntl.html#sage.rings.polynomial.polynomial_modn_dense_ntl.small_roots)) function.
