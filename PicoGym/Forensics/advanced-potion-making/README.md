@@ -63,6 +63,7 @@ The file signature looked familiar to a PNG file. After reading on [Wikipedia](h
 ```
 
 The resultant image was entirely red...
+
 ![image](./advanced-potion-making-1)
 
 After playing around in an image editor (GNU Image Manipulation Program), I tried an auto white balance function which was in-built into the program. It produced [advanced-potion-making-2](./advanced-potion-making-2) which shows us the flag...

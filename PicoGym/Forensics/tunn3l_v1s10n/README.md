@@ -35,6 +35,7 @@ This did not narrow it down. I checked the file signature using `hexedit` to see
 ```
 
 `42 4D` does correspond to a BMP file signature. I tried to open it with an image viewer but it gave me an error that 'BMP image has unsupported header size'. I read on [Wikipedia](https://en.wikipedia.org/wiki/BMP_file_format) that header size is specified as 4 bytes in an offset of 14 bytes. I downloaded a random bmp file [`sample.bmp`](./sample.bmphe 4 bytes at) and copied to the above position to the given challenge file, hence producing [`tunn3l_v1s10n_1`](./tunn3l_v1s10n_1). Now I could view the image given below...
+
 ![image](./tunn3l_v1s10n_1)
 
 The hex content came out to be..
@@ -70,6 +71,7 @@ Its hex content is now...
 ```
 
 The image is as below...
+
 ![image](./tunn3l_v1s10n_2)
 
 Finally we have flag `picoCTF{qu1t3_a_v13w_2020}`
