@@ -13,6 +13,7 @@ Download this image file and find the flag.
 We are given a Scalable Vector Graphics file [`drawing.flag.svg`](./drawing.flag.svg). It looks like the following...
 
 ![`drawing.flag.svg`](./drawing.flag.svg)
+
 If a text editor is used to open this file, it would look like the following...
 
 ```svg
