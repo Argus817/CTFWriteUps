@@ -31,3 +31,5 @@ for line in output.split("\n"):
     if 'picoCTF{' in line:
         print(line.strip())
         break
+        
+img.close()
