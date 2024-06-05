@@ -39,4 +39,4 @@ $ python3 solve.py
 picoCTF{15_y0ur_que57_qu1x071c_0r_h3r01c_06326238}
 ```
 
-Hence the flag is `$ picoCTF{15_y0ur_que57_qu1x071c_0r_h3r01c_06326238}`.
+Hence the flag is `picoCTF{15_y0ur_que57_qu1x071c_0r_h3r01c_06326238}`.
