@@ -18,7 +18,7 @@ What username does the attacker go by?
 
 ## Solution
 
-We are given an SVG file [sakurapwnedletter.svg](./sakurapwnedletter.svg). It is a normal SVG file as confirmed by the `file` command. It looks like the following...
+We are given an SVG file [`sakurapwnedletter.svg`](./sakurapwnedletter.svg). It is a normal SVG file as confirmed by the `file` command. It looks like the following...
 
 ![sakurapwnedletter.svg](./sakurapwnedletter.svg)
 
