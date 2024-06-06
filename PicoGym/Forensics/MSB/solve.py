@@ -17,12 +17,6 @@ def readMSB():
         output += chr(int(binary[i*8: i*8+8], 2))
     return output
 
-def saveOutput(content):
-    printable = set(string.printable)
-    content = "".join(filter(lambda x: x in printable, content))
-    with open('output', "w") as f:
-        f.write(content)
-
 output = readMSB()
 printable = set(string.printable)
 output = "".join(filter(lambda x: x in printable, output))
