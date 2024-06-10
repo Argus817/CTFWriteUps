@@ -91,15 +91,15 @@ print(ESSAY_TEMPLATE % (N, value_1, value_2))
 
 We have 
 `N`, `value_1` and `value_2` from the above code.<br>
-Let $v_1$ = `value_1`, ${v_2}$ = `value_2`, n = `N` and the integer representing flag to be $f$. Here `N` is composite so we cannot directly use Tonelli-Shanks algorithm to compute $f$ such that $f^2 \equiv {v_1} \mod n$.<br>
+Let $v_1$ = `value_1`, ${v_2}$ = `value_2`, n = `N` and the integer representing flag to be $f$. Here `N` is composite so we cannot directly use Tonelli-Shanks algorithm to compute $f$ such that $f^2 \equiv {v_1}\  (mod \ n)$.<br>
 
-We know that $v_1 \equiv f^2\mod n$ and ${v_2} = \lfloor  (f^2)^{\frac{1}{3}} \rfloor$. 
+We know that $v_1 \equiv f^2\ (mod\  n)$ and ${v_2} = \lfloor  (f^2)^{\frac{1}{3}} \rfloor$. 
 We also know that<br>
 ${v_2} < f^{\frac{2}{3}} < y+1$ and hence <br>
 ${v_2}^{\frac{3}{2}} < f < ({v_2}+1)^{\frac{3}{2}}$<br>
 
 Let $l = \lceil {v_2}^{\frac{3}{2}}\rceil$, we can be sure that $f = l+x$ where $x < ({v_2}+1)^{\frac{3}{2}} - {v_2}^{\frac{3}{2}} \approx {\frac{3}{2}}{v_2}^{\frac{1}{2}} < {\frac{3}{2}}{n}^{\frac{1}{3}}$. 
 Since we know that in mod $n$,
-${v_1} \equiv f^2 \equiv (l+x)^2$, we can use Coppersmith's method on the polynomial $g(x) = (x+l)^2 - {v_1}$ to find the value of $x_0$ such that $g(x_0) \equiv 0 \mod n, \ {x_0} < {\frac{3}{2}}{n}^{\frac{1}{3}}$, and hence the value of $f$. <br>
+${v_1} \equiv f^2 \equiv (l+x)^2$, we can use Coppersmith's method on the polynomial $g(x) = (x+l)^2 - {v_1}$ to find the value of $x_0$ such that $g(x_0) \equiv 0 \ (mod\  n), \ {x_0} < {\frac{3}{2}}{n}^{\frac{1}{3}}$, and hence the value of $f$. <br>
 
-Complete solution is given in [`solve.py`](./solve.py). CUniversity_Paperoppersmith's method is implemented using SageMath's `small_roots` ([link](https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_modn_dense_ntl.html#sage.rings.polynomial.polynomial_modn_dense_ntl.small_roots)) function.
+Complete solution is given in [`solve.py`](./solve.py). Coppersmith's method is implemented using SageMath's `small_roots` ([link](https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_modn_dense_ntl.html#sage.rings.polynomial.polynomial_modn_dense_ntl.small_roots)) function.

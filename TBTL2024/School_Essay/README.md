@@ -1,9 +1,15 @@
 # School Essay - Crypto
+
 ## Hint
+
 I had to write an essay for school describing my favorite classmate. I wonder if my classmates will be able to figure out who I'm describing... 
+
 #### Attachments: `description.txt` `chall.py`
+
 ## Solution
+
 We are given a text file `description.txt` with the following contents
+
 ```
 My Favorite Classmate
 =====================
@@ -25,6 +31,7 @@ By now, all of you have probably guessed who I'm talking about.
 We are also given a file `chall.py` which was used to generate `description.txt`
 
 `chall.py` has the following contents
+
 ```python3
 from Crypto.Util.number import *
 from redacted import FLAG
@@ -70,8 +77,9 @@ value_2 = invpow3(name_int**2)
 
 print(ESSAY_TEMPLATE % (N, value_1, value_2))
 ```
+
 We have 
 `N`, `value_1` and `value_2` from the above code.<br>
-Let $v_1$ = `value_1`, ${v_2}$ = `value_2`, n = `N` and the integer representing flag to be $f$. Here `N` is prime so we can use Tonelli-Shank's algorithm to compute $f$ such that $f^2 \equiv {v_1} \mod n$
+Let $v_1$ = `value_1`, ${v_2}$ = `value_2`, n = `N` and the integer representing flag to be $f$. Here `N` is prime so we can use Tonelli-Shank's algorithm to compute $f$ such that $f^2 \equiv {v_1}\  (mod \ n)$
 
 Complete solution is given in [`solve.py`](./solve.py). Tonelli-Shank's algorithm is given in [`tonellishanks.py`](./tonellishanks.py) (credits to [ZeroBone](https://zerobone.net/blog/math/tonelli-shanks/)).
