@@ -19,7 +19,7 @@ We are given an image file [`cat.jpg`](./cat.jpg)
 There seems to be nothing out of the ordinary after looking at the image. `binwalk` confirms it.
 
 ```bash
-binwalk cat.jpg
+$ binwalk cat.jpg
 
 DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
