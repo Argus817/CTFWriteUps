@@ -92,7 +92,7 @@ if __name__ == "__main__":
 
 In this challenge, we need to create a digital signature of a fixed plaintext `TARGET` using the method how *textbook RSA signatures* are created. The server gives us the ability to ask for a signature of arbitrary plaintext and submit the signature of . It is clear we need to perform the chosen plaintext attack.
 
-Given public key $n$, $e$ and  $p \equiv$ `TARGET`$ \ (mod \ n)$ in integer form. Private key exponent $d$ is not given.<br>
+Given public key $n$, $e$ and  $p \equiv$ `TARGET`$\ (mod \ n)$ in integer form. Private key exponent $d$ is not given.<br>
 The server won't let me input $p$ directly and get its signature ${s_p} \equiv (p)^d \ (mod\ n)$. Instead I asked the server to sign $(2p) \ (mod\ n)$ which the server has no issue in signing. I received the signature ${s_{2p}}\equiv(2p)^d \ (mod\ n)$. Next I calculated the inverse of $2$ which is $2^{-1} \ (mod\ n)$ and sent it to the server for signing. Hence I received the signature ${s_{2^{-1}}}\equiv {(2^{-1})^d}\ (mod\ n)$. Multiplying ${s_{2p}}$ and ${s_{2^{-1}}}$ would give me ${s_p}$ as we have <br>
 ${s_{2p}}\ ×\ {s_{2^{-1}}} \equiv (2p)^d \ (mod\ n)\ ×\ {(2^{-1})^d}\ (mod\ n) \equiv (\ (2p \ (mod\ n)) \ ×\  (2^{-1} \ (mod\ n))\ ) \ (mod\ n) \equiv p \ (mod\ n) \equiv s_p \ (mod\ n)$<br>
 Hence $s_p \equiv {s_{2p}}\ ×\ {s_{2^{-1}}} \ (mod\ n)$ <br>
